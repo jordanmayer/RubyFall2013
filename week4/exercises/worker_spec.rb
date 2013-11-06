@@ -16,7 +16,7 @@ describe Worker do
 		result.should == 7
 	end
 
-	it "executes a block in the context of the calling method" do
+	it "executes a block in the context of the calling method" do #nooo idea
 		n = 1
 		result = Worker.work do
 			n + 4
@@ -25,9 +25,9 @@ describe Worker do
 	end
 
 
-	it "executes a block 3 times and returns the result" do
+	it "executes a block 3 times and returns the result" do 
 		n = 5
-		result = Worker.work(3) do
+		result = Worker.work(3) do # give work a times parameter
 			n += 1
 		end
 		result.should == 8

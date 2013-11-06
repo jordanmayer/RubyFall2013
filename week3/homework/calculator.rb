@@ -10,8 +10,9 @@ class Calculator
 	end  
 
 # Multiplies all integers in an array
-	def multiply(*num)	  
-	  num.flatten.inject(:*)
+	def multiply(*num)
+	  
+	  num.flatten.inject(1, :*)
 	end
 
 # Ups something to a power
@@ -20,8 +21,8 @@ class Calculator
 	end
 
 # Gets the factorial (product of all numbers up to target number)
-	def factorial(num)
-	  1.upto(num).to_a.inject(:*)
+	def fac(num)
+	  1.upto(num).inject(:*)
 	end  
 
 end

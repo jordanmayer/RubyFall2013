@@ -42,26 +42,27 @@ describe Calculator do
 	32.times{ p *= 2 } 
 	@calculator.pow(2,32).should eq p 
   end
-  
+ 
+ 
   # http://en.wikipedia.org/wiki/Factorial
   describe "#factorial" do
     it "computes the factorial of 0" do
-    	@calculator.fac(0).should eq 1
+      @calculator.fac(0).should eq 1
     end
     it "computes the factorial of 1" do
-    	@calculator.fac(1).should eq 1
+      @calculator.fac(1).should eq 1
     end
 
     it "computes the factorial of 2" do
-    	@calculator.fac(2).should eq 2
+      @calculator.fac(2).should eq 2
     end
 
     it "computes the factorial of 5" do
-    	@calculator.fac(5).should eq 120
+      @calculator.fac(5).should eq 120
     end
 
     it "computes the factorial of 10" do
-    	@calculator.fac(10).should eq 3628800
+      @calculator.fac(10).should eq 3628800
     end
 
   end
